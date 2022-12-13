@@ -1,0 +1,114 @@
+@import "reset";
+
+#home {
+    width: 100vw;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    overflow-x: hidden;
+    color: #1c2f42;
+    
+    &>header {
+        display: grid;
+        grid-template-columns: 0.2fr 0.8fr;
+        background-color: #074b6b;
+        color: #fff;
+        box-shadow: 2px 2px 5px;
+        
+        nav {
+            
+            figure {
+                display: grid;
+                grid-template-columns: 0.5fr 1fr;
+                    img {
+                    width: 100%;
+                    align-self: center;
+                    justify-self: center;
+                    }
+                }
+            ul {
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+                height: 100%;
+                
+                li{
+                    display:inline-block;
+                }
+            }
+        }
+    }
+    
+    &>main {
+        
+        span {
+            color:#bb232e;
+        }
+        
+        &>section:first-of-type{
+            display:grid;
+            grid-template-columns:1fr 1fr;
+        }
+        
+        #left{
+            background-color:#fff;
+        }
+        
+        
+        #right{
+            background-color:#1c2f42;
+            align-items:center;
+            justify-items:center;
+            
+            figure{
+                
+                img {
+                    align-self:center;
+                    justify-self:center;
+                    width:30%;
+                }
+            } 
+                
+        }
+        
+        
+        #red{
+            background-color:#bb232e;
+            
+            ul {
+                width:80%;
+                margin:auto;
+                display:grid;
+                grid-template-columns:repeat(3,1fr);
+                column-gap: 1rem;
+                
+                li{
+                    
+                    article {
+                        background-color:#fff;
+                        border-radius:5px;
+                        padding:10px;
+                        
+                        header {
+                            
+                            figure {
+                                
+                                img{
+                                    width:100%;
+                                }
+                            }
+                        }
+                        
+                        section {
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    
+    &>footer {
+        background-color:#1c2f42;
+        color:#ffffff;
+    }
+}
